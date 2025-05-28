@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "798685713139",
+    "firebase_url": "https://pingmexx-default-rtdb.firebaseio.com",
+    "project_id": "pingmexx",
+    "storage_bucket": "pingmexx.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798685713139:android:31a043779c53023aca1d86",
+        "android_client_info": {
+          "package_name": "com.webaddicted.pingmexx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798685713139-55miuvjnq130jgfbmhk29je3k843jbst.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webaddicted.pingmexx",
+            "certificate_hash": "140db8f629e01526363cc7d9b78c5f73558a2a55"
+          }
+        },
+        {
+          "client_id": "798685713139-6lt9bkdtssjjqddj66isej0443et5qq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfk3iPc1YmcGC4wilRxRATAQivZBvZRSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798685713139-6lt9bkdtssjjqddj66isej0443et5qq5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

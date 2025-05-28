@@ -1,0 +1,144 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.android.libraries.mapsplatform.secrets-gradle-plugin"
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace = "com.webaddicted.pingmexx"
+    compileSdk 35 //flutter.compileSdkVersion
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled true
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17
+    }
+
+    defaultConfig {
+        applicationId = "com.webaddicted.pingmexx"
+        minSdk = 24
+        targetSdk = 35
+//        PlayStore
+        versionCode = 1
+        versionName = "1.0.1"
+//        Indus
+//        versionCode = 29
+//        versionName = "2.0.29"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation("com.google.firebase:firebase-analytics")
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.4'
+//    implementation("com.google.firebase:firebase-firestore-ktx")
+//    implementation 'com.android.support:multidex:1.0.3'
+    implementation "androidx.multidex:multidex:2.0.1"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs << "-Xlint:-options"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//plugins{
+//    id 'com.android.application'
+//    id 'kotlin-android'
+//}
+//def localProperties = new Properties()
+//def localPropertiesFile = rootProject.file('local.properties')
+//if (localPropertiesFile.exists()) {
+//    localPropertiesFile.withReader('UTF-8') { reader ->
+//        localProperties.load(reader)
+//    }
+//}
+//
+//def flutterRoot = localProperties.getProperty('flutter.sdk')
+//if (flutterRoot == null) {
+//    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+//}
+//
+//def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+//if (flutterVersionCode == null) {
+//    flutterVersionCode = '1'
+//}
+//
+//def flutterVersionName = localProperties.getProperty('flutter.versionName')
+//if (flutterVersionName == null) {
+//    flutterVersionName = '1.0'
+//}
+//
+//apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+//
+//android {
+//    compileSdkVersion 31
+//
+//    sourceSets {
+//        main.java.srcDirs += 'src/main/kotlin'
+//    }
+//
+//    lintOptions {
+//        disable 'InvalidPackage'
+//    }
+//
+//    defaultConfig {
+//        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+//        applicationId "com.groceryapp.app"
+//        minSdkVersion 21
+//        targetSdkVersion 31
+//        multiDexEnabled true
+//        versionCode flutterVersionCode.toInteger()
+//        versionName flutterVersionName
+//    }
+//
+//    buildTypes {
+//        release {
+//            // TODO: Add your own signing config for the release build.
+//            // Signing with the debug keys for now, so `flutter run --release` works.
+//            signingConfig signingConfigs.debug
+//        }
+//    }
+//}
+//
+//flutter {
+//    source '../..'
+//}
+//
+//dependencies {
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    implementation "androidx.multidex:multidex:2.0.1"
+//}
