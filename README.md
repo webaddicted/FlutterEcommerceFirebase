@@ -1,15 +1,15 @@
-# DhiBasket
+# FlutterEcommerceFirebase
 
 <div>
 <strong>
 
-A Flutter Application, Built with ❤️ from [DhiWise](https://www.dhiwise.com/)
+A Flutter Application, Built with ❤️ from [FlutterEcommerceFirebase](https://github.com/webaddicted/)
 
 </strong>
 
 <h4>This is a Grocery Application built with Flutter.
 
-It uses [Webflow CMS](https://webflow.com/cms) to store and retrieve data.</h4>
+It uses [Firebase](https://console.firebase.google.com/u/0/?pli=1) to store and retrieve data.</h4>
 
 </div>
 
@@ -22,7 +22,7 @@ Flutter SDK Version 3.0.0 or greater.
 ## Figma Design
 https://www.figma.com/file/MFmvrF4Lkjw0rCLzPmH1yk/Grocery
 
-### Webflow CMS Collections
+### Firebase Collections
 
 1. Addresses
 2. Users
@@ -99,21 +99,3 @@ https://www.figma.com/file/MFmvrF4Lkjw0rCLzPmH1yk/Grocery
 └── theme - contains app theme and decoration classes
 
 ```
-
-## MIT License
-
-Copyright (c) 2022 DhiWise
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-## Support
-
-[DhiWise Discord Community](https://discord.gg/hTuNauNjyJ)
